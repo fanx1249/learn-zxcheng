@@ -1,6 +1,6 @@
 ---
 title: 投稿指南
-description: 如何为 Zxcheng Learn 提交教程。
+description: 如何为汪汪队教程站提交教程。
 sidebar_position: 1
 tags: [contribution]
 ---

@@ -31,14 +31,14 @@ const tutorialGroups = [
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="Zxcheng Learn"
-      description="Zxcheng Learn 是一个基于 Docusaurus 的中文教程网站，支持 Markdown/MDX 写作和 GitHub Pull Request 投稿。">
+      title="汪汪队教程站"
+      description="汪汪队教程站是一个基于 Docusaurus 的中文教程网站，支持 Markdown/MDX 写作和 GitHub Pull Request 投稿。">
       <main className={styles.page}>
         <section className={styles.hero}>
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}>learn.zxcheng.org</p>
             <Heading as="h1" className={styles.title}>
-              Zxcheng Learn 教程站
+              汪汪队教程站
             </Heading>
             <p className={styles.subtitle}>
               用清晰、可复现的教程，把实践经验整理成可以持续协作的知识库。

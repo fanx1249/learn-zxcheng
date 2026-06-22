@@ -1,13 +1,13 @@
 ---
-title: 欢迎来到 Zxcheng Learn
+title: 欢迎来到汪汪队教程站
 description: 了解这个教程站的定位、内容结构和协作方式。
 sidebar_position: 1
 tags: [intro]
 ---
 
-# 欢迎来到 Zxcheng Learn
+# 欢迎来到汪汪队教程站
 
-Zxcheng Learn 是一个面向实践的教程网站。第一版先解决三件事：
+汪汪队教程站是一个面向实践的教程网站。第一版先解决三件事：
 
 1. 读者可以按分类阅读清晰的图文教程。
 2. 作者可以用 Markdown/MDX 写教程并提交 Pull Request。

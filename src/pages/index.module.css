@@ -6,17 +6,17 @@
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.86fr);
-  gap: 3rem;
+  grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.75fr);
+  gap: 2.5rem;
   align-items: center;
   min-height: 76vh;
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 5.5rem 1.5rem 4rem;
 }
 
 .heroCopy {
-  max-width: 680px;
+  max-width: 780px;
 }
 
 .eyebrow {
@@ -37,11 +37,17 @@
 }
 
 .subtitle {
-  max-width: 620px;
+  max-width: 780px;
   margin: 1.4rem 0 0;
   color: #41504b;
-  font-size: 1.22rem;
+  font-size: clamp(1.08rem, 1.35vw, 1.2rem);
   line-height: 1.75;
+}
+
+@media screen and (min-width: 1180px) {
+  .subtitle {
+    white-space: nowrap;
+  }
 }
 
 .actions {

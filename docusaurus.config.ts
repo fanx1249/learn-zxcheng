@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const repositoryUrl = process.env.REPOSITORY_URL;
 
 const config: Config = {
-  title: 'Zxcheng Learn',
+  title: '汪汪队教程站',
   tagline: '面向实践的教程和知识库',
   favicon: 'img/favicon.svg',
 
@@ -41,7 +41,7 @@ const config: Config = {
         },
         blog: {
           routeBasePath: 'updates',
-          blogTitle: 'Zxcheng Learn 更新',
+          blogTitle: '汪汪队教程站 更新',
           blogDescription: '站点公告、内容计划和精选教程更新。',
           showReadingTime: true,
           feedOptions: {
@@ -67,9 +67,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Zxcheng Learn',
+      title: '汪汪队教程站',
       logo: {
-        alt: 'Zxcheng Learn Logo',
+        alt: '汪汪队教程站 Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -134,7 +134,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Zxcheng Learn. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 汪汪队教程站. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

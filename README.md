@@ -1,6 +1,6 @@
-# Zxcheng Learn
+# 汪汪队教程站
 
-Zxcheng Learn 是一个基于 Docusaurus 的中文教程网站，计划部署到 `learn.zxcheng.org`。
+汪汪队教程站是一个基于 Docusaurus 的中文教程网站，计划部署到 `learn.zxcheng.org`。
 
 ## 本地开发
 

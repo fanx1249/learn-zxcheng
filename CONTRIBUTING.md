@@ -1,6 +1,6 @@
 # 投稿指南
 
-感谢你愿意为 Zxcheng Learn 投稿。第一版采用 GitHub Pull Request 协作。
+感谢你愿意为汪汪队教程站投稿。第一版采用 GitHub Pull Request 协作。
 
 ## 投稿前
 
