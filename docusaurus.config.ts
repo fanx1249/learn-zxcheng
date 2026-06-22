@@ -2,7 +2,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const repositoryUrl = process.env.REPOSITORY_URL;
+const repositoryUrl =
+  process.env.REPOSITORY_URL ?? 'https://github.com/fanx1249/learn-zxcheng';
 
 const config: Config = {
   title: '汪汪队教程站',
