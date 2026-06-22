@@ -1,0 +1,24 @@
+name: 内容修正
+description: 反馈教程中的错误、过期截图或失效链接
+title: "[内容修正] "
+labels: ["content-fix"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 页面链接
+      description: 哪一篇教程有问题？
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 请说明错误、过期信息或复现失败的位置。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 建议修正
+      description: 如果你知道正确写法，可以直接写在这里。

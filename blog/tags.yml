@@ -1,0 +1,14 @@
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Docusaurus 建站与维护记录
+
+announcement:
+  label: 公告
+  permalink: /announcement
+  description: 站点公告和版本更新
+
+contribution:
+  label: 投稿
+  permalink: /contribution
+  description: 投稿流程、审核规则和协作说明

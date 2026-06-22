@@ -1,0 +1,24 @@
+name: 教程选题
+description: 提议一个希望新增的教程主题
+title: "[教程选题] "
+labels: ["tutorial-request"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 想解决什么问题
+      description: 请说明读者完成这篇教程后应该得到什么。
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: 适合谁
+      description: 说明目标读者、前置知识或使用场景。
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考资料
+      description: 可以贴相关文档、仓库或已有教程链接。

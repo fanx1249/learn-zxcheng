@@ -1,0 +1,262 @@
+.page {
+  background:
+    linear-gradient(180deg, #f7fbf7 0%, #ffffff 34%),
+    #ffffff;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.86fr);
+  gap: 3rem;
+  align-items: center;
+  min-height: 76vh;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 5.5rem 1.5rem 4rem;
+}
+
+.heroCopy {
+  max-width: 680px;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: #0f766e;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: #12201c;
+  font-size: clamp(2.75rem, 7vw, 5.6rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.subtitle {
+  max-width: 620px;
+  margin: 1.4rem 0 0;
+  color: #41504b;
+  font-size: 1.22rem;
+  line-height: 1.75;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.preview {
+  overflow: hidden;
+  border: 1px solid #d8e2dd;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(16, 24, 40, 0.11);
+}
+
+.previewHeader {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: 44px;
+  padding: 0 1rem;
+  border-bottom: 1px solid #e4ebe7;
+  background: #f1f5f3;
+}
+
+.previewHeader span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c6d2cc;
+}
+
+.previewBody {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  min-height: 330px;
+}
+
+.previewSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.25rem;
+  border-right: 1px solid #e4ebe7;
+  background: #f8faf9;
+  color: #50615b;
+  font-size: 0.92rem;
+}
+
+.previewSidebar strong {
+  color: #12201c;
+}
+
+.previewContent {
+  padding: 1.5rem;
+}
+
+.previewKicker {
+  margin: 0 0 0.75rem;
+  color: #a35b00;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.previewContent h2 {
+  margin: 0;
+  color: #12201c;
+  font-size: 1.65rem;
+  line-height: 1.25;
+}
+
+.previewContent p {
+  color: #4d5d57;
+  line-height: 1.7;
+}
+
+.previewCode {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.previewCode span {
+  overflow: hidden;
+  padding: 0.68rem 0.75rem;
+  border: 1px solid #e3e9e6;
+  border-radius: 6px;
+  background: #fbfcfb;
+  color: #29413a;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.sectionHeader {
+  max-width: 680px;
+  margin-bottom: 1.8rem;
+}
+
+.sectionHeader h2,
+.workflow h2 {
+  color: #12201c;
+  letter-spacing: 0;
+}
+
+.sectionHeader p {
+  color: #52615b;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  min-height: 178px;
+  padding: 1.2rem;
+  border: 1px solid #dfe8e3;
+  border-radius: 8px;
+  color: inherit;
+  background: #ffffff;
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.card:hover {
+  border-color: #72b39d;
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(16, 24, 40, 0.09);
+}
+
+.card h3 {
+  margin: 0 0 0.65rem;
+  color: #12201c;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: #56665f;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.workflow {
+  max-width: 1180px;
+  margin: 0 auto 4rem;
+  padding: 2rem 1.5rem 3rem;
+  border-top: 1px solid #e4ebe7;
+}
+
+.workflow ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.workflow li {
+  min-height: 142px;
+  padding: 1rem;
+  border: 1px solid #dfe8e3;
+  border-radius: 8px;
+  background: #fbfcfb;
+  color: #46574f;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 3.25rem;
+  }
+
+  .grid,
+  .workflow ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .previewBody {
+    grid-template-columns: 1fr;
+  }
+
+  .previewSidebar {
+    display: none;
+  }
+
+  .grid,
+  .workflow ol {
+    grid-template-columns: 1fr;
+  }
+}
