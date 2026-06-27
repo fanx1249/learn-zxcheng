@@ -29,7 +29,7 @@ export default function Home(): ReactNode {
           <div className={styles.heroImageWrap}>
             <img
               className={styles.heroImage}
-              src="/img/site/sci-couplet.png"
+              src="/img/site/sci-couplet.jpg"
               alt="科研顺利，文章投哪哪都要，数据分析好到爆"
             />
           </div>

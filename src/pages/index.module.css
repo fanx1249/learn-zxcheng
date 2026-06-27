@@ -5,17 +5,17 @@
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
-  gap: clamp(2rem, 6vw, 6rem);
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: clamp(2rem, 5vw, 5rem);
   align-items: center;
   min-height: calc(100vh - var(--ifm-navbar-height));
-  max-width: 1320px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: clamp(3rem, 7vw, 6rem) 1.5rem;
 }
 
 .heroCopy {
-  max-width: 780px;
+  max-width: 860px;
 }
 
 .eyebrow {
@@ -30,9 +30,10 @@
 .title {
   margin: 0;
   color: #12201c;
-  font-size: clamp(4rem, 8vw, 7rem);
+  font-size: clamp(3.8rem, 6.2vw, 5.6rem);
   line-height: 0.98;
   letter-spacing: 0;
+  white-space: nowrap;
 }
 
 .subtitle {
@@ -59,7 +60,7 @@
 
 .heroImage {
   display: block;
-  width: min(100%, 430px);
+  width: min(100%, 500px);
   max-height: min(64vh, 520px);
   border-radius: 8px;
   object-fit: contain;
@@ -82,6 +83,10 @@
   .heroImage {
     width: min(100%, 360px);
     max-height: none;
+  }
+
+  .title {
+    white-space: normal;
   }
 }
 
