@@ -1,6 +1,6 @@
 # 汪汪队教程站
 
-汪汪队教程站是一个基于 Docusaurus 的中文教程网站，计划部署到 `learn.zxcheng.org`。
+这是基于 Docusaurus 的个人教程站，部署到 `https://learn.zxcheng.org`。
 
 ## 本地开发
 
@@ -18,31 +18,18 @@ npm run build
 npm run typecheck
 ```
 
-`npm run build` 会生成静态产物到 `build/`，适合交给 Cloudflare Pages 托管。
+## 写教程
 
-## 内容目录
-
-```text
-docs/       教程正文
-blog/       站点公告和更新日志
-static/img/ 截图和站点图片
-.github/    投稿、选题和 PR 模板
-```
-
-## 投稿方式
-
-第一版使用 GitHub Pull Request 投稿。投稿者可以先阅读：
-
-- `docs/contribute/write-a-tutorial.md`
-- `docs/contribute/tutorial-template.md`
-- `CONTRIBUTING.md`
-
-## 部署目标
-
-推荐使用 Cloudflare Pages 免费版连接 GitHub 仓库：
+正式教程直接放在 `docs/` 根目录下，不再按分类拆分。文件名使用英文小写和连字符：
 
 ```text
-Build command: npm run build
-Build output directory: build
-Production domain: learn.zxcheng.org
+docs/example-tutorial.md
 ```
+
+截图放到：
+
+```text
+static/img/tutorials/example-tutorial/
+```
+
+站点发布由 Cloudflare Pages 自动完成，推送到 GitHub `main` 分支后会自动部署。

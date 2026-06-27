@@ -2,9 +2,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const repositoryUrl =
-  process.env.REPOSITORY_URL ?? 'https://github.com/fanx1249/learn-zxcheng';
-
 const config: Config = {
   title: '汪汪队教程站',
   tagline: '面向实践的教程和知识库',
@@ -17,7 +14,7 @@ const config: Config = {
   url: 'https://learn.zxcheng.org',
   baseUrl: '/',
 
-  organizationName: 'zxcheng',
+  organizationName: 'fanx1249',
   projectName: 'learn-zxcheng',
 
   onBrokenLinks: 'throw',
@@ -38,22 +35,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          ...(repositoryUrl ? {editUrl: `${repositoryUrl}/tree/main`} : {}),
         },
-        blog: {
-          routeBasePath: 'updates',
-          blogTitle: '汪汪队教程站 更新',
-          blogDescription: '站点公告、内容计划和精选教程更新。',
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          ...(repositoryUrl ? {editUrl: `${repositoryUrl}/tree/main`} : {}),
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -62,10 +45,11 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/logo.svg',
+    image: 'img/site/sci-couplet.png',
     colorMode: {
       defaultMode: 'light',
-      respectPrefersColorScheme: true,
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: '汪汪队教程站',
@@ -73,30 +57,7 @@ const config: Config = {
         alt: '汪汪队教程站 Logo',
         src: 'img/logo.svg',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: '教程',
-        },
-        {
-          to: '/docs/contribute/write-a-tutorial',
-          label: '投稿指南',
-          position: 'left',
-        },
-        {to: '/updates', label: '更新', position: 'left'},
-        {to: '/contributors', label: '贡献者', position: 'left'},
-        ...(repositoryUrl
-          ? [
-              {
-                href: repositoryUrl,
-                label: 'GitHub',
-                position: 'right' as const,
-              },
-            ]
-          : []),
-      ],
+      items: [],
     },
     docs: {
       sidebar: {
@@ -107,35 +68,6 @@ const config: Config = {
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 4,
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: '教程',
-          items: [
-            {label: '开始阅读', to: '/docs/intro'},
-            {label: '入门指南', to: '/docs/beginner/start-here'},
-            {label: '实战教程', to: '/docs/projects/publish-first-tutorial'},
-          ],
-        },
-        {
-          title: '贡献',
-          items: [
-            {label: '投稿指南', to: '/docs/contribute/write-a-tutorial'},
-            {label: '审核清单', to: '/docs/contribute/review-checklist'},
-            {label: '教程模板', to: '/docs/contribute/tutorial-template'},
-          ],
-        },
-        {
-          title: '站点',
-          items: [
-            {label: '更新', to: '/updates'},
-            {label: '贡献者', to: '/contributors'},
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} 汪汪队教程站. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
