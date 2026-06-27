@@ -26,12 +26,43 @@ export default function Home(): ReactNode {
               </Link>
             </div>
           </div>
-          <div className={styles.heroImageWrap}>
+          <div
+            className={styles.coupletScene}
+            aria-label="科研顺利，文章投哪哪都要，数据分析好到爆">
             <img
-              className={styles.heroImage}
-              src="/img/site/sci-couplet.jpg"
-              alt="科研顺利，文章投哪哪都要，数据分析好到爆"
+              className={`${styles.coupletPiece} ${styles.coupletTop}`}
+              src="/img/site/couplet/top.png"
+              alt=""
+              aria-hidden="true"
             />
+            <div className={styles.coupletBody}>
+              <img
+                className={`${styles.coupletPiece} ${styles.coupletVertical}`}
+                src="/img/site/couplet/left.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <div className={styles.coupletCenter}>
+                <img
+                  className={`${styles.coupletPiece} ${styles.coupletDiamond}`}
+                  src="/img/site/couplet/sci.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <img
+                  className={`${styles.coupletPiece} ${styles.coupletDiamond}`}
+                  src="/img/site/couplet/fa.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <img
+                className={`${styles.coupletPiece} ${styles.coupletVertical}`}
+                src="/img/site/couplet/right.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
           </div>
         </section>
       </main>

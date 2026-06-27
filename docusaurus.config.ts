@@ -45,7 +45,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/site/sci-couplet.png',
+    image: 'img/site/sci-couplet.jpg',
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
