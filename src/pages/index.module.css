@@ -54,17 +54,17 @@
 
 .coupletScene {
   justify-self: center;
-  width: min(100%, 580px);
+  width: min(100%, 500px);
   display: grid;
   justify-items: center;
-  gap: clamp(0.85rem, 2vw, 1.15rem);
+  gap: clamp(0.35rem, 1vw, 0.65rem);
 }
 
 .coupletBody {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(78px, 118px) minmax(150px, 210px) minmax(78px, 118px);
-  gap: clamp(1.35rem, 2.6vw, 2.1rem);
+  grid-template-columns: minmax(86px, 112px) minmax(132px, 158px) minmax(86px, 112px);
+  gap: clamp(0.75rem, 1.55vw, 1.2rem);
   justify-content: center;
   align-items: center;
 }
@@ -76,23 +76,23 @@
 }
 
 .coupletTop {
-  width: min(48%, 280px);
+  width: min(54%, 270px);
 }
 
 .coupletVertical {
   width: 100%;
-  height: min(52vh, 430px);
+  height: min(56vh, 450px);
 }
 
 .coupletCenter {
   display: grid;
   justify-items: center;
   align-content: center;
-  gap: clamp(1.35rem, 4vh, 2.2rem);
+  gap: clamp(0.95rem, 2.6vh, 1.55rem);
 }
 
 .coupletDiamond {
-  width: min(100%, 150px);
+  width: min(100%, 154px);
 }
 
 @media screen and (min-width: 1180px) {
@@ -109,24 +109,24 @@
   }
 
   .coupletScene {
-    width: min(100%, 420px);
+    width: min(100%, 380px);
   }
 
   .coupletBody {
-    grid-template-columns: minmax(64px, 88px) minmax(110px, 148px) minmax(64px, 88px);
-    gap: 1.1rem;
+    grid-template-columns: minmax(58px, 78px) minmax(94px, 124px) minmax(58px, 78px);
+    gap: 0.75rem;
   }
 
   .coupletTop {
-    width: min(58%, 220px);
+    width: min(62%, 210px);
   }
 
   .coupletVertical {
-    height: 320px;
+    height: 300px;
   }
 
   .coupletDiamond {
-    width: min(100%, 112px);
+    width: min(100%, 102px);
   }
 
   .title {
