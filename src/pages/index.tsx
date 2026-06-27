@@ -21,7 +21,7 @@ export default function Home(): ReactNode {
               用清晰、可复现的教程，把实践经验整理成可以持续协作的知识库。
             </p>
             <div className={styles.actions}>
-              <Link className="button button--primary button--lg" to="/docs/codex-session-too-long">
+              <Link className="button button--primary button--lg" to="/docs/problems/codex-session-too-long">
                 开始阅读
               </Link>
             </div>

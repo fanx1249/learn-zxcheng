@@ -13,6 +13,12 @@ const config: Config = {
 
   url: 'https://learn.zxcheng.org',
   baseUrl: '/',
+  scripts: [
+    {
+      src: '/js/navbar-search-submit.js',
+      defer: true,
+    },
+  ],
 
   organizationName: 'fanx1249',
   projectName: 'learn-zxcheng',
@@ -44,6 +50,26 @@ const config: Config = {
     ],
   ],
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        language: ['zh', 'en'],
+        docsRouteBasePath: '/docs',
+        docsDir: 'docs',
+        explicitSearchResultPath: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        searchResultContextMaxLength: 80,
+        searchBarPosition: 'right',
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/site/sci-couplet.jpg',
     colorMode: {
@@ -57,7 +83,24 @@ const config: Config = {
         alt: '汪汪队教程站 Logo',
         src: 'img/logo.svg',
       },
-      items: [],
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'problemSidebar',
+          position: 'left',
+          label: '问题解决',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'toolsSidebar',
+          position: 'left',
+          label: '工具推荐',
+        },
+        {
+          type: 'search',
+          position: 'right',
+        },
+      ],
     },
     docs: {
       sidebar: {
